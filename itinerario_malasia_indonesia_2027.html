@@ -1,0 +1,2917 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gran Viaje en Pareja Mayo 2027 | 4 Opciones Completas: Indonesia, Malasia, Vietnam & Sri Lanka</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif-title { font-family: 'Playfair Display', serif; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeIn 0.25s ease-in-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .custom-scrollbar::-webkit-scrollbar { height: 6px; width: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    .hero-malaysia {
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.96) 100%), url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1600&q=80') center/cover;
+    }
+    .hero-indonesia {
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.96) 100%), url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80') center/cover;
+    }
+    .hero-vietnam {
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.96) 100%), url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1600&q=80') center/cover;
+    }
+    .hero-srilanka {
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.96) 100%), url('https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1600&q=80') center/cover;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased selection:bg-teal-500 selection:text-white pb-24 md:pb-12">
+
+  <!-- ================================================= -->
+  <!-- TOP STICKY BAR / NAVBAR -->
+  <!-- ================================================= -->
+  <header class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-3">
+      
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-400 to-emerald-500 flex items-center justify-center text-slate-950 font-black text-xl shadow-md">
+          🌏
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-bold text-base sm:text-lg tracking-tight leading-tight">Gran Viaje Pareja Mayo 2027 (Edición Definitiva)</h1>
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-teal-500/20 text-teal-300 border border-teal-500/30">15 al 28/29 Mayo</span>
+          </div>
+          <p class="text-xs text-slate-400">1 Noche Vuelo + 12/13 Noches Hotel Exactas • Presupuesto: 1.500€ - 2.000€ / persona</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <div class="bg-slate-800 border border-slate-700/80 px-3 py-1.5 rounded-xl flex items-center gap-2 text-xs">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="text-slate-300">Estimación: <strong class="text-emerald-400 font-bold" id="header-budget-indicator">1.615€ - 1.810€ / pers</strong></span>
+        </div>
+        <button onclick="switchTab('tab-simulador')" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold shadow transition-all">
+          <span>🧮</span> Simulador
+        </button>
+      </div>
+
+    </div>
+
+    <!-- MAIN TABS (Mobile swipeable) -->
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex overflow-x-auto custom-scrollbar border-t border-slate-800 gap-1 sm:gap-2">
+      <button onclick="switchTab('tab-vuelos')" id="btn-tab-vuelos" class="tab-btn px-3 sm:px-4 py-3 text-xs sm:text-sm font-semibold border-b-2 border-teal-400 text-teal-400 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+        <span>✈️</span> Vuelos (Vuelta 28 vs 29)
+      </button>
+      <button onclick="switchTab('tab-indonesia')" id="btn-tab-indonesia" class="tab-btn px-3 sm:px-4 py-3 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+        <span>🇮🇩</span> 1. Indonesia (Bali & Gili)
+      </button>
+      <button onclick="switchTab('tab-malasia')" id="btn-tab-malasia" class="tab-btn px-3 sm:px-4 py-3 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+        <span>🇲🇾</span> 2. Malasia & Perhentian
+      </button>
+      <button onclick="switchTab('tab-vietnam')" id="btn-tab-vietnam" class="tab-btn px-3 sm:px-4 py-3 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+        <span>🇻🇳</span> 3. Vietnam (Halong & Hoi An)
+      </button>
+      <button onclick="switchTab('tab-srilanka')" id="btn-tab-srilanka" class="tab-btn px-3 sm:px-4 py-3 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+        <span>🇱🇰</span> 4. Sri Lanka (Safari & Té)
+      </button>
+      <button onclick="switchTab('tab-simulador')" id="btn-tab-simulador" class="tab-btn px-3 sm:px-4 py-3 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+        <span>🧮</span> Simulador
+      </button>
+      <button onclick="switchTab('tab-comparador')" id="btn-tab-comparador" class="tab-btn px-3 sm:px-4 py-3 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+        <span>⚖️</span> Veredicto & Clima
+      </button>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-8">
+
+    <!-- ================================================= -->
+    <!-- TAB 1: VUELOS & ESTRATEGIA DE RETORNO -->
+    <!-- ================================================= -->
+    <div id="tab-vuelos" class="tab-content active space-y-8">
+
+      <!-- Calendario estricto de noches -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+        <span class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-800 bg-teal-50 border border-teal-200 rounded-full mb-3">
+          📅 Cómputo Exacto del Calendario (15 al 28 o 29 de Mayo 2027)
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-serif-title">
+          Distribución Matemática de las Noches del Viaje
+        </h2>
+        <p class="mt-2 text-slate-600 text-sm leading-relaxed">
+          Para que no falte ni una sola noche por planificar en ningún destino, este es el desglose exacto según la fecha de vuelta:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+            <span class="text-xs text-slate-500 font-bold uppercase block">Ida (Noche 1)</span>
+            <p class="font-bold text-slate-900 text-sm mt-1">Sábado 15 de Mayo</p>
+            <p class="text-xs text-slate-500 mt-0.5">Vuelo nocturno España ➔ Asia (Noche 1 a bordo).</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200">
+            <span class="text-xs text-emerald-800 font-bold uppercase block">Opción Vuelta 28 Mayo</span>
+            <p class="font-bold text-emerald-900 text-sm mt-1">12 Noches de Hotel en Destino</p>
+            <p class="text-xs text-emerald-700 mt-0.5">Check-in domingo 16 de mayo ➔ Check-out viernes 28 de mayo. Llegada a España sábado 29.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-blue-50 border border-blue-200">
+            <span class="text-xs text-blue-800 font-bold uppercase block">Opción Vuelta 29 Mayo</span>
+            <p class="font-bold text-blue-900 text-sm mt-1">13 Noches de Hotel en Destino</p>
+            <p class="text-xs text-blue-700 mt-0.5">Check-in domingo 16 de mayo ➔ Check-out sábado 29 de mayo. Llegada a España domingo 30.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Estrategia Vuelta Viernes 28 vs Sábado 29 -->
+      <div class="bg-gradient-to-r from-amber-500/10 via-teal-500/10 to-blue-500/10 border-2 border-teal-500/30 rounded-3xl p-6 sm:p-8 bg-white shadow-sm">
+        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 font-serif-title">
+          Estrategia de Precio en Vuelos: Vuelta Viernes 28 vs Sábado 29
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          En las grandes aerolíneas (Qatar, Turkish, Emirates, Etihad), <strong>regresar en viernes suele ahorrar entre 60 € y 130 € por persona</strong> respecto al sábado o domingo:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="p-4 rounded-2xl bg-white border border-emerald-300">
+            <span class="text-xs font-bold text-emerald-700 uppercase">Vuelta Viernes 28 de Mayo</span>
+            <p class="font-bold text-slate-900 text-sm mt-1">Ahorro de ~150€ - 250€ para la pareja</p>
+            <p class="text-xs text-slate-500 mt-0.5">Llegáis el sábado 29 a casa y tenéis el domingo entero para descansar antes de trabajar.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white border border-blue-300">
+            <span class="text-xs font-bold text-blue-700 uppercase">Vuelta Sábado 29 de Mayo</span>
+            <p class="font-bold text-slate-900 text-sm mt-1">1 Día / 1 Noche Extra en Destino</p>
+            <p class="text-xs text-slate-500 mt-0.5">Aprovecháis el viernes 28 entero en la playa o de compras y voláis el sábado 29.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enlaces directos a Google Flights -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-xl font-bold text-slate-900 font-serif-title">Enlaces Directos para Comparar Precios en Google Flights</h3>
+        <p class="text-xs text-slate-500">Pulsad en cada enlace para ver precios y horarios en tiempo real desde Madrid o Málaga:</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+          
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">🇮🇩 Bali (DPS)</span>
+              <h4 class="font-bold text-slate-900 text-sm mt-2">Madrid/Málaga ➔ Bali</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Qatar / Turkish (1 escala directa desde AGP).</p>
+            </div>
+            <div class="mt-4 space-y-2">
+              <a href="https://www.google.com/travel/flights?q=Flights%20to%20DPS%20from%20MAD%20on%202027-05-15%20through%202027-05-28" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl shadow-sm transition">
+                Vuelta 28 Mayo (MAD) ↗
+              </a>
+              <a href="https://www.google.com/travel/flights?q=Flights%20to%20DPS%20from%20AGP%20on%202027-05-15%20through%202027-05-29" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-white border border-slate-300 hover:bg-slate-100 text-slate-800 rounded-xl transition">
+                Vuelta 29 Mayo (Málaga) ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-blue-800 bg-blue-100 px-2 py-0.5 rounded">🇲🇾 Malasia (KUL)</span>
+              <h4 class="font-bold text-slate-900 text-sm mt-2">Madrid/Málaga ➔ Kuala Lumpur</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Etihad / Qatar / Turkish (Tarifa más baja).</p>
+            </div>
+            <div class="mt-4 space-y-2">
+              <a href="https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20MAD%20on%202027-05-15%20through%202027-05-28" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-700 hover:bg-blue-800 text-white rounded-xl shadow-sm transition">
+                Vuelta 28 Mayo (MAD) ↗
+              </a>
+              <a href="https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20AGP%20on%202027-05-15%20through%202027-05-29" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-white border border-slate-300 hover:bg-slate-100 text-slate-800 rounded-xl transition">
+                Vuelta 29 Mayo (Málaga) ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-rose-800 bg-rose-100 px-2 py-0.5 rounded">🇻🇳 Vietnam (HAN)</span>
+              <h4 class="font-bold text-slate-900 text-sm mt-2">Madrid/Málaga ➔ Hanói</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Qatar Airways / Turkish Airlines.</p>
+            </div>
+            <div class="mt-4 space-y-2">
+              <a href="https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20MAD%20on%202027-05-15%20through%202027-05-28" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-rose-700 hover:bg-rose-800 text-white rounded-xl shadow-sm transition">
+                Vuelta 28 Mayo (MAD) ↗
+              </a>
+              <a href="https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20AGP%20on%202027-05-15%20through%202027-05-29" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-white border border-slate-300 hover:bg-slate-100 text-slate-800 rounded-xl transition">
+                Vuelta 29 Mayo (Málaga) ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded">🇱🇰 Sri Lanka (CMB)</span>
+              <h4 class="font-bold text-slate-900 text-sm mt-2">Madrid/Málaga ➔ Colombo</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Qatar Airways / Etihad / Turkish.</p>
+            </div>
+            <div class="mt-4 space-y-2">
+              <a href="https://www.google.com/travel/flights?q=Flights%20to%20CMB%20from%20MAD%20on%202027-05-15%20through%202027-05-28" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-amber-700 hover:bg-amber-800 text-white rounded-xl shadow-sm transition">
+                Vuelta 28 Mayo (MAD) ↗
+              </a>
+              <a href="https://www.google.com/travel/flights?q=Flights%20to%20CMB%20from%20AGP%20on%202027-05-15%20through%202027-05-29" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-white border border-slate-300 hover:bg-slate-100 text-slate-800 rounded-xl transition">
+                Vuelta 29 Mayo (Málaga) ↗
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ================================================= -->
+    <!-- TAB 2: INDONESIA - BALI & GILI (12/13 NOCHES) -->
+    <!-- ================================================= -->
+    <div id="tab-indonesia" class="tab-content space-y-8">
+      
+      <div class="hero-indonesia rounded-3xl p-6 sm:p-12 text-white shadow-xl relative overflow-hidden">
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 bg-emerald-500/30 backdrop-blur text-emerald-200 text-xs font-bold rounded-full mb-3 uppercase tracking-wider border border-emerald-400/30">Opción 1 • El Mes de Oro en Asia</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-serif-title leading-tight">Indonesia: Bali Mágico, Arrozales & Gili Air</h2>
+          <p class="mt-3 text-slate-200 text-sm sm:text-base leading-relaxed">
+            1 noche en vuelo + **12 noches de hotel** (o 13 noches si vuelta el 29 de mayo): Ubud (4 noches) + Gili Air (3 noches) + Uluwatu (4 noches) + Jimbaran (1 o 2 noches).
+          </p>
+        </div>
+      </div>
+
+      <!-- Itinerario Completo Indonesia Día por Día -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 font-serif-title">Itinerario Completo Día a Día (Indonesia)</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Cronograma detallado con mañanas, tardes, noches y gastronomía:</p>
+        </div>
+
+        <div class="relative border-l-2 border-emerald-400 ml-3 sm:ml-4 pl-5 sm:pl-6 space-y-6">
+          
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-800">Día 1 • Sábado 15 Mayo</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Vuelo Internacional hacia Bali (DPS)</h4>
+              <p class="text-xs text-slate-600 mt-1">Salida desde Madrid o Málaga con Qatar Airways o Turkish Airlines (1 escala). <strong>Noche 1 a bordo</strong>.</p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-600 text-white">Día 2 • Domingo 16 Mayo (Noche 1 en Ubud)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Llegada a Bali ➔ Traslado a la Jungla de Ubud</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Tarde:</strong> Aterrizaje en Denpasar DPS. Recogida por vuestro chófer privado y traslado a Ubud (1h15m).<br>
+                • <strong>Noche:</strong> Check-in en vuestro resort rodeado de arrozales. Cena relajada en <em>Clear Cafe</em>.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Día 3 • Lunes 17 Mayo (Noche 2 en Ubud)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Monkey Forest, Terrazas de Tegalalang & Columpio Balinés</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Mañana:</strong> Bosque de los macacos sagrados (*Sacred Monkey Forest*) y Palacio Real de Ubud.<br>
+                • <strong>Tarde:</strong> Terrazas de arroz de <strong>Tegalalang</strong>, columpio sobre el valle y sendero <em>Campuhan Ridge Walk</em> al atardecer.<br>
+                • <strong>Noche:</strong> Cena en <em>Bridges Bali</em> con vistas al río.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Día 4 • Martes 18 Mayo (Noche 3 en Ubud)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Purificación en Tirta Empul, Cañón Gunung Kawi & Cascada Kanto Lampo</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Mañana:</strong> Ritual ancestral de purificación con agua sagrada en <strong>Tirta Empul</strong> vestidos con sarong.<br>
+                • <strong>Tarde:</strong> Santuarios funerarios de Gunung Kawi y baño refrescante en la cascada escalonada de <em>Kanto Lampo</em>.<br>
+                • <strong>Final del día:</strong> Masaje balinés tradicional en pareja (60 min por unos 12€/persona).
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Día 5 • Miércoles 19 Mayo (Noche 4 en Ubud)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Templo Ulun Danu Beratan en el Lago & Arrozales Jatiluwih (UNESCO)</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Visita al icónico templo que parece flotar sobre el agua en el lago Bedugul.<br>
+                • Almuerzo con vistas a los kilométricos arrozales protegidos de <strong>Jatiluwih</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-teal-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-teal-50/70 border border-teal-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-teal-700 text-white">Días 6 al 8 • 20 al 22 Mayo (3 Noches en Gili Air)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">3 Días en Gili Air: El Paraíso Sin Coches & Tortugas</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Día 6:</strong> Lancha rápida (*Eka Jaya*) a <strong>Gili Air</strong>. Check-in frente a la playa.<br>
+                • <strong>Día 7:</strong> Recorrido en bicicleta por la arena blanca. Snorkel directo desde la playa: <strong>tortugas marinas gigantes a 15 metros de la orilla</strong>.<br>
+                • <strong>Día 8:</strong> Barco local a las esculturas sumergidas de Gili Meno. Puestas de sol con música acústica en <em>PinkCoco</em>.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-amber-50/60 border border-amber-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white">Días 9 al 12 • 23 al 26 Mayo (4 Noches en Uluwatu)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Uluwatu: Acantilados, Playas Doradas & Danza Kecak</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Día 9:</strong> Lancha rápida de regreso a Bali y traslado a la península de Bukit (Uluwatu).<br>
+                • <strong>Día 10:</strong> Calas de Thomas Beach y Padang Padang. Al atardecer, templo sobre el precipicio de <strong>Pura Luhur Uluwatu</strong> y espectáculo de la <strong>Danza del Fuego Kecak</strong>.<br>
+                • <strong>Día 11:</strong> Día de relax en el exclusivo <em>Sundays Beach Club</em> con funicular a la cala privada.<br>
+                • <strong>Día 12:</strong> Tarde chic en Seminyak/Canggu curioseando tiendas de diseño balinés.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-slate-900 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-900 text-white">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-500 text-slate-950 font-black">Días 13 al 14/15 • 27 al 28 o 29 Mayo (1 o 2 Noches en Jimbaran)</span>
+              <h4 class="font-bold text-white text-sm sm:text-base mt-1">Cena con Velas en la Bahía de Jimbaran & Vuelo de Vuelta</h4>
+              <p class="text-xs text-slate-300 mt-1">
+                • <strong>Día 13:</strong> Traslado a Jimbaran. <strong>Cena romántica de despedida con los pies en la arena y velas</strong> disfrutando de marisco a la brasa.<br>
+                • <strong>Día 14 (Vuelta Viernes 28) o Día 15 (Vuelta Sábado 29):</strong> Traslado al aeropuerto DPS y vuelo de regreso a España.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Hoteles Indonesia Estructurados por Paradas (TODOS CON FOTO REAL) -->
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 font-serif-title">Catálogo Completo de Hoteles por Paradas (Indonesia)</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Múltiples alternativas en cada parada con fotos reales, precios y Booking.com:</p>
+        </div>
+
+        <!-- Parada 1: Ubud -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full uppercase">Parada 1 (4 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Ubud: Entre Arrozales, Templos y Cascadas</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 56€ - 88€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-emerald-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=80" alt="Alaya Resort Ubud" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Top Parejas 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Alaya Resort Ubud</h5>
+                  <p class="text-xs text-slate-500 mt-1">Santuario balinés con piscina desbordante frente a campos de arroz y spa de autor DaLa.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~88 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-emerald-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~352 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Alaya+Resort+Ubud" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-emerald-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="Adiwana Jembawan" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Piscina Selva</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Adiwana Resort Jembawan</h5>
+                  <p class="text-xs text-slate-500 mt-1">Oasis íntimo con piscinas infinitas escalonadas rodeadas de vegetación tropical exuberante.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~79 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-emerald-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~316 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Adiwana+Resort+Jembawan+Ubud" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-emerald-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Anumana Village" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Anumana Village Ubud</h5>
+                  <p class="text-xs text-slate-500 mt-1">Suites luminosas con terraza privada y piscina a 5 min a pie del Bosque de los Monos.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~56 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-emerald-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~224 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Anumana+Village+Ubud" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 2: Gili Air -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-pink-800 bg-pink-50 px-2.5 py-0.5 rounded-full uppercase">Parada 2 (3 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Gili Air: Paraíso Marino Sin Vehículos de Motor</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 62€ - 115€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-pink-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=700&q=80" alt="PinkCoco Gili Air" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-pink-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Adults Only</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">PinkCoco Gili Air</h5>
+                  <p class="text-xs text-slate-500 mt-1">A pie de arena frente al arrecife de tortugas. Música acústica y ambiente romántico.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~82 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-pink-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~246 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=PinkCoco+Gili+Air" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-pink-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=700&q=80" alt="Slow Gili Air" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Villa con Piscina</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Slow Gili Air / Atoll Haven</h5>
+                  <p class="text-xs text-slate-500 mt-1">Villas privadas de arquitectura minimalista belga en un cocotal con piscina privada.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~115 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-pink-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~345 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Slow+Gili+Air" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-pink-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Camilla Resort" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-teal-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Bungalow Tropical</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Camilla Resort Gili Air</h5>
+                  <p class="text-xs text-slate-500 mt-1">Bungalows modernos de madera con jardín tropical, piscina y bicicletas gratis.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~62 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-pink-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~186 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Camilla+Resort+Gili+Air" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 3: Uluwatu -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full uppercase">Parada 3 (4 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Uluwatu: Acantilados, Playas Doradas & Beach Clubs</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 64€ - 115€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1559628233-eb1b1a45564b?auto=format&fit=crop&w=700&q=80" alt="Le Cliff Bali" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-amber-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Sobre el Mar</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Le Cliff Bali (Padang Padang)</h5>
+                  <p class="text-xs text-slate-500 mt-1">Habitaciones suspendidas en el acantilado sobre las olas del Índico con acceso a playa.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~92 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~368 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Le+Cliff+Bali+Uluwatu" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Suarga Padang" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Eco Lujo</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Suarga Padang Padang</h5>
+                  <p class="text-xs text-slate-500 mt-1">Resort sostenible de bambú con dos piscinas panorámicas al atardecer sobre el océano.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~115 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~460 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Suarga+Padang+Padang" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="The Room Padang" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Boho Chic</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">The Room Padang-Padang</h5>
+                  <p class="text-xs text-slate-500 mt-1">Ambiente surfero y relajado con piscina comunitaria, camas balinesas y a 300m de la playa.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~64 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~256 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=The+Room+Padang-Padang" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 4: Jimbaran (AMBOS CON FOTO REAL) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-blue-800 bg-blue-50 px-2.5 py-0.5 rounded-full uppercase">Parada 4 (1 Noche - o 2 Noches si vuelta el 29)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Jimbaran Bay: Cena Romántica con Velas a la Orilla del Mar</h4>
+            </div>
+            <span class="text-xs text-slate-500">A 15 min del aeropuerto DPS</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-blue-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80" alt="Watermark Hotel Jimbaran" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-blue-800 text-white text-[10px] font-bold px-2 py-0.5 rounded">Comodidad & Spa</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Watermark Hotel & Spa Jimbaran</h5>
+                  <p class="text-xs text-slate-500 mt-1">A 5 min de la bahía de las cenas con velas y a 15 min del aeropuerto. Piscina en azotea y spa de masajes.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio 1 noche:</span>
+                    <strong class="text-slate-900 font-bold">~68 €</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Watermark+Hotel+Jimbaran" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-blue-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=700&q=80" alt="RIMBA Ayana Resort" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-amber-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Capricho Final 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">RIMBA by AYANA Bali</h5>
+                  <p class="text-xs text-slate-500 mt-1">Acceso preferente al icónico <em>Rock Bar</em> sobre el acantilado y 12 piscinas espectaculares para culminar el viaje.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio 1 noche:</span>
+                    <strong class="text-slate-900 font-bold">~140 €</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=RIMBA+by+AYANA+Bali" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================================================= -->
+    <!-- TAB 3: MALASIA (12/13 NOCHES) -->
+    <!-- ================================================= -->
+    <div id="tab-malasia" class="tab-content space-y-8">
+      
+      <div class="hero-malaysia rounded-3xl p-6 sm:p-12 text-white shadow-xl relative overflow-hidden">
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 bg-teal-500/30 backdrop-blur text-teal-200 text-xs font-bold rounded-full mb-3 uppercase tracking-wider border border-teal-400/30">Opción 2 • Mayor Ahorro</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-serif-title leading-tight">Malasia Peninsular & Perhentian</h2>
+          <p class="mt-3 text-slate-200 text-sm sm:text-base leading-relaxed">
+            1 noche en vuelo + **12 noches de hotel** (o 13 si vuelta el 29 de mayo): Kuala Lumpur (2 noches) + Penang (2 noches) + Perhentian (4 noches) + Melaka (2 noches) + Kuala Lumpur final (2 o 3 noches).
+          </p>
+        </div>
+      </div>
+
+      <!-- Itinerario Malasia Día a Día -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 font-serif-title">Itinerario Completo Día a Día (Malasia)</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Plan diario detallado con templos, comida callejera y traslados:</p>
+        </div>
+
+        <div class="relative border-l-2 border-blue-400 ml-3 sm:ml-4 pl-5 sm:pl-6 space-y-6">
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-800">Día 1 • Sábado 15 Mayo</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Vuelo Internacional hacia Kuala Lumpur (KUL)</h4>
+              <p class="text-xs text-slate-600 mt-1">Salida desde Madrid o Málaga con Etihad, Qatar Airways o Turkish. <strong>Noche 1 a bordo</strong>.</p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-blue-50/60 border border-blue-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-600 text-white">Día 2 • Domingo 16 Mayo (Noche 1 en KL)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Llegada a Kuala Lumpur & Piscina en Azotea frente a Petronas</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Tarde:</strong> Llegada a KUL. Check-in en vuestro apartamento con infinity pool en el piso 51.<br>
+                • <strong>Atardecer:</strong> Baño con vistas directas a las Torres Petronas mientras se iluminan.<br>
+                • <strong>Noche:</strong> Cena en el mercado callejero de <em>Jalan Alor</em> (brochetas Satay y noodles al wok).
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800">Día 3 • Lunes 17 Mayo (Noche 2 en KL)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Batu Caves, Templo Thean Hou, Chinatown & Heli Lounge</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Mañana:</strong> Escaleras de colores y estatua de Murugan en <strong>Batu Caves</strong>. Templo chino de 6 niveles <em>Thean Hou</em>.<br>
+                • <strong>Tarde:</strong> Callejones con cafeterías hipster en Kwai Chai Hong y Central Market.<br>
+                • <strong>Noche:</strong> Cóctel en el helipuerto al aire libre de <em>Heli Lounge Bar</em> con vistas 360° a los rascacielos.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-blue-100 text-blue-800">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-700 text-white">Día 4 • Martes 18 Mayo (Noche 1 en Penang)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Vuelo a Penang (George Town) & Búsqueda del Street Art</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Vuelo de 50 minutos con AirAsia a Penang. Check-in en hotel boutique peranakan colonial.<br>
+                • Tarde en bicicleta buscando los famosos murales de arte urbano interactivo en Armenia Street.<br>
+                • Cena en los puestos callejeros de <em>Chulia Street</em> probando el mejor <em>Char Kway Teow</em> del mundo.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800">Día 5 • Miércoles 19 Mayo (Noche 2 en Penang)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Templo Monumental Kek Lok Si & Clan Jetties Flotantes</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Ascenso al majestuoso complejo budista de <strong>Kek Lok Si</strong> y su pagoda de 7 plantas.<br>
+                • Visita a los muelles flotantes de pescadores chinos sobre pilotes de madera (<em>Clan Jetties</em>).
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-teal-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-teal-50/70 border border-teal-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-teal-700 text-white">Días 6 al 9 • 20 al 23 Mayo (4 Noches en Perhentian)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">4 Días en las Islas Perhentian: Aguas Turquesas & Tortugas</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Día 6:</strong> Vuelo matutino Penang a Kota Bharu + lancha rápida a Perhentian. Llegada a la arena blanca.<br>
+                • <strong>Día 7:</strong> Barco privado de snorkel: nado cara a cara con tortugas marinas en <em>Turtle Beach</em> y arrecifes de coral.<br>
+                • <strong>Día 8:</strong> Kayak transparente a calas solitarias (Romantic Beach) y atardecer en Coral Bay.<br>
+                • <strong>Día 9:</strong> Relax total en la playa y cena de pescado fresco a la brasa sobre la arena.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-amber-50/60 border border-amber-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white">Días 10 y 11 • 24 y 25 Mayo (2 Noches en Melaka)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Melaka: Joya Colonial Fluvial de la UNESCO</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Regreso en lancha y vuelo a KL, traslado privado directo a la histórica <strong>Melaka</strong>.<br>
+                • Crucero fluvial nocturno entre murales, Plaza Holandesa Stadthuys e Iglesia de San Pablo.<br>
+                • Paseo por Jonker Street y noche en hotel señorial junto al río.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-slate-900 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-900 text-white">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-500 text-white">Días 12 al 14/15 • 26 al 28 o 29 Mayo (2 o 3 Noches en KL)</span>
+              <h4 class="font-bold text-white text-sm sm:text-base mt-1">Putrajaya (Mezquita Rosa), Compras & Vuelo de Vuelta</h4>
+              <p class="text-xs text-slate-300 mt-1">
+                • <strong>Día 12:</strong> Regreso a KL. Subida a la torre KL Tower y compras en Pavilion.<br>
+                • <strong>Día 13:</strong> Visita a la mezquita rosa flotante de <strong>Putrajaya</strong>.<br>
+                • <strong>Día 14 (Vuelta Viernes 28) o Día 15 (Vuelta Sábado 29):</strong> Vuelo de regreso a España.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hoteles Malasia por Paradas (TODOS CON FOTO) -->
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 font-serif-title">Catálogo Completo de Hoteles por Paradas (Malasia)</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Múltiples alternativas en cada parada con fotos reales, precios y Booking.com:</p>
+        </div>
+
+        <!-- Parada 1 & 5: KL -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-blue-800 bg-blue-50 px-2.5 py-0.5 rounded-full uppercase">Paradas 1 y 5 (4 o 5 Noches Totales)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Kuala Lumpur: Skyline, Rascacielos & Piscinas Panorámicas</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 45€ - 85€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-blue-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="The Face Suites" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Recomendado #1</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">The Face Suites KLCC</h5>
+                  <p class="text-xs text-slate-500 mt-1">Apartamentos de 60m² con las vistas más famosas de Asia a las Torres Petronas.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~60 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-blue-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~240 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=The+Face+Suites+Kuala+Lumpur" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-blue-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Hotel Stripes KL" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-amber-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Boutique Autograph</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Hotel Stripes Kuala Lumpur</h5>
+                  <p class="text-xs text-slate-500 mt-1">Elegancia boutique urbana (Marriott Autograph) con rooftop bar frente a la KL Tower.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~85 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-blue-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~340 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Hotel+Stripes+Kuala+Lumpur" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-blue-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=700&q=80" alt="Ceylonz Suites" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Super Ahorro</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Ceylonz Suites by Roomy</h5>
+                  <p class="text-xs text-slate-500 mt-1">Estudios de diseño nórdico con piscina suspendida y jardines verticales cerca de Bukit Bintang.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~45 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-blue-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~180 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Ceylonz+Suites+Kuala+Lumpur" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 2: Penang -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full uppercase">Parada 2 (2 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">George Town (Penang): Mansiones UNESCO & Street Food</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 58€ - 68€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1570789210967-2cac24afeb00?auto=format&fit=crop&w=700&q=80" alt="Areca Hotel Penang" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-amber-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Encanto Peranakan</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Areca Hotel Penang</h5>
+                  <p class="text-xs text-slate-500 mt-1">Mansión histórica restaurada en pleno casco antiguo protegido por la UNESCO.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~68 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~136 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Areca+Hotel+Penang" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="The Granite Luxury" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Piscina Voladizo</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">The Granite Luxury Hotel</h5>
+                  <p class="text-xs text-slate-500 mt-1">Hotel de diseño con piscina acristalada suspendida y vistas panorámicas a George Town.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~58 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~116 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=The+Granite+Luxury+Hotel+Penang" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 3: Perhentian -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full uppercase">Parada 3 (4 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Islas Perhentian: Aguas Turquesas & Arrecifes de Tortugas</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 78€ - 105€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-emerald-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=700&q=80" alt="Mimpi Perhentian" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded">Pie de Playa</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Mimpi Perhentian Resort</h5>
+                  <p class="text-xs text-slate-500 mt-1">El resort más moderno de Long Beach con piscina de agua salada frente al mar turquesa.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~105 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-emerald-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~420 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Mimpi+Perhentian+Resort" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-emerald-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Perhentian Island Resort" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Bahía de Tortugas</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Perhentian Island Resort (PIR)</h5>
+                  <p class="text-xs text-slate-500 mt-1">Bahía privada en Besar: sales nadando desde la playa y nadas junto a tortugas a 10 metros.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~78 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-emerald-700 font-semibold mt-1">
+                    <span>Total 4 noches:</span>
+                    <strong>~312 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Perhentian+Island+Resort" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 4: Melaka -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2.5 py-0.5 rounded-full uppercase">Parada 4 (2 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Melaka: Ciudad Colonial Fluvial & Casas Señoriales</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 48€ - 82€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="The Nest House Melaka" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-rose-800 text-white text-[10px] font-bold px-2 py-0.5 rounded">Boutique Intimista</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">The Nest House Melaka</h5>
+                  <p class="text-xs text-slate-500 mt-1">Boutique intimista con patio ajardinado y diseño de autor a 5 minutos de Jonker Street.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~48 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~96 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=The+Nest+House+Melaka" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="The Majestic Malacca" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Gran Lujo Colonial</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">The Majestic Malacca Hotel</h5>
+                  <p class="text-xs text-slate-500 mt-1">Mansión histórica de 1929 junto al río con suelos originales, spa premiado y piscina.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~82 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~164 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=The+Majestic+Malacca" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================================================= -->
+    <!-- TAB 4: VIETNAM (12/13 NOCHES) -->
+    <!-- ================================================= -->
+    <div id="tab-vietnam" class="tab-content space-y-8">
+      
+      <div class="hero-vietnam rounded-3xl p-6 sm:p-12 text-white shadow-xl relative overflow-hidden">
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 bg-rose-500/30 backdrop-blur text-rose-200 text-xs font-bold rounded-full mb-3 uppercase tracking-wider border border-rose-400/30">Opción 3 • Cruceros, Farolillos & Montañas</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-serif-title leading-tight">Vietnam: Halong Bay, Ninh Binh & Hoi An</h2>
+          <p class="mt-3 text-slate-200 text-sm sm:text-base leading-relaxed">
+            1 noche en vuelo + **12 noches de hotel** (o 13 si vuelta el 29 de mayo): Hanói (2 noches) + Ninh Binh (2 noches) + Crucero Halong Bay 5★ (1 noche a bordo) + Hoi An & Playa An Bang (5 noches) + Da Nang/Hanói (2 o 3 noches).
+          </p>
+        </div>
+      </div>
+
+      <!-- Itinerario Completo Vietnam -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 font-serif-title">Itinerario Completo Día a Día (Vietnam)</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Plan diario detallado combinando lo mejor del Norte y Centro:</p>
+        </div>
+
+        <div class="relative border-l-2 border-rose-400 ml-3 sm:ml-4 pl-5 sm:pl-6 space-y-6">
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-rose-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-800">Día 1 • Sábado 15 Mayo</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Vuelo Internacional hacia Hanói (HAN)</h4>
+              <p class="text-xs text-slate-600 mt-1">Salida de Madrid o Málaga con Qatar Airways o Turkish Airlines (1 escala). <strong>Noche 1 a bordo</strong>.</p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-rose-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-rose-50/60 border border-rose-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-600 text-white">Día 2 • Domingo 16 Mayo (Noche 1 en Hanói)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Llegada a Hanói & Café de Huevo en el Old Quarter</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Llegada a Hanói. Traslado al hotel boutique colonial en el Barrio Antiguo.<br>
+                • Paseo alrededor del lago Hoan Kiem y el templo Ngoc Son sobre el puente rojo.<br>
+                • Café con huevo en el histórico <em>Cafe Giang</em>.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-rose-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800">Día 3 • Lunes 17 Mayo (Noche 2 en Hanói)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Templo de la Literatura, Calle del Tren & Street Food</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Mañana:</strong> Templo de la Literatura (universidad imperial de 1070) y Pagoda del Pilar Único.<br>
+                • <strong>Tarde:</strong> Ver pasar el tren a pocos centímetros de los cafés en <em>Train Street</em>.<br>
+                • <strong>Noche:</strong> Cena callejera probando el auténtico <em>Bun Cha</em> (cerdo a la brasa con fideos).
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-700 text-white">Días 4 y 5 • 18 y 19 Mayo (2 Noches en Ninh Binh)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Ninh Binh: La "Bahía de Halong en Tierra" & Mirador Hang Mua</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Traslado a Ninh Binh (1h45m). Barcas de remo tradicionales por el río Tam Coc entre montañas.<br>
+                • Subida a la cima del dragón en <strong>Hang Mua</strong> con las vistas más espectaculares de Vietnam.<br>
+                • Visita a la pagoda budista de Bich Dong en la roca y paseo en bici entre arrozales.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-teal-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-teal-50/70 border border-teal-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-teal-700 text-white">Días 6 y 7 • 20 y 21 Mayo (1 Noche a Bordo Crucero 5★)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Crucero de Lujo 5★ en la Bahía de Halong (Noche en el Mar)</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Día 6:</strong> Embarque en junco de lujo (*Peony Cruises*). Camarote con terraza panorámica.<br>
+                • Kayak entre cuevas e islotes, baño en aguas esmeralda y clase de cocina en cubierta al atardecer.<br>
+                • <strong>Día 7:</strong> Tai Chi al amanecer sobre el mar, cueva secreta y desembarque.<br>
+                • Vuelo corto de 1h a Da Nang para llegar a <strong>Hoi An</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-amber-50/60 border border-amber-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white">Días 8 al 12 • 22 al 26 Mayo (5 Noches en Hoi An & Playa)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Hoi An: La Ciudad de los Farolillos de Seda & Playa An Bang</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Día 8:</strong> Puente Japonés y paseo en barca por el río Thu Bon soltando farolillos de papel con velas.<br>
+                • <strong>Día 9:</strong> Alquiler de bicis hasta la playa de <strong>An Bang</strong> (sol y mar en su mejor época de mayo).<br>
+                • <strong>Día 10:</strong> Barcas de cesta redonda en el palmeral de Cam Thanh y santuario de <em>My Son</em>.<br>
+                • <strong>Días 11 y 12:</strong> Días de relax, masajes, trajes a medida y cenas en terrazas iluminadas.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-slate-900 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-900 text-white">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-500 text-white">Días 13 al 14/15 • 27 al 28 o 29 Mayo (2 o 3 Noches en Da Nang/Hanói)</span>
+              <h4 class="font-bold text-white text-sm sm:text-base mt-1">Montañas de Mármol de Da Nang & Vuelo de Vuelta</h4>
+              <p class="text-xs text-slate-300 mt-1">
+                • <strong>Día 13:</strong> Cuevas sagradas de las Montañas de Mármol y Puente del Dragón de Da Nang.<br>
+                • <strong>Día 14 (Vuelta Viernes 28) o Día 15 (Vuelta Sábado 29):</strong> Vuelo de regreso a España.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hoteles Vietnam por Paradas (TODOS CON FOTO) -->
+      <!-- HOTELES VIETNAM POR PARADAS (3 OPCIONES POR CADA PARADA) -->
+      <div class="space-y-6">
+        <div>
+          <span class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider text-rose-800 bg-rose-50 border border-rose-200 rounded-full mb-2">3 Alternativas por Escala</span>
+          <h3 class="text-2xl font-bold text-slate-900 font-serif-title">Catálogo Completo de Hoteles y Crucero por Paradas (Vietnam)</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Opciones Calidad/Precio Top, Boutique Romántico y Lujo Asequible con fotos, precios y enlaces a Booking:</p>
+        </div>
+
+        <!-- Parada 1: Hanói (2 Noches) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2.5 py-0.5 rounded-full uppercase">Parada 1 (2 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Hanói: Casco Antiguo & Barrio Francés</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 48€ - 95€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=700&q=80" alt="La Sinfonia del Rey Hanoi" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top 4★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">La Sinfonía del Rey Hotel & Spa</h5>
+                  <p class="text-xs text-slate-500 mt-1">Ubicación inmejorable en el Old Quarter frente al Lago Hoan Kiem. Rooftop sky bar con cócteles al atardecer.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~52 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~104 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=La+Sinfonia+del+Rey+Hotel+Spa+Hanoi" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-rose-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Recomendado Parejas</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="JM Marvel Hotel Hanoi" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Boutique Romántico 4★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">JM Marvel Hotel & Spa</h5>
+                  <p class="text-xs text-slate-500 mt-1">Diseño neoclásico refinado, habitaciones de techos altos insonorizadas, servicio de té de bienvenida y spa propio.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~74 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~148 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-rose-50 border-t border-rose-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=JM+Marvel+Hotel+Spa+Hanoi" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-rose-700 hover:bg-rose-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=700&q=80" alt="The Oriental Jade Hotel" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Lujo 5★ Rooftop Pool</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">The Oriental Jade Hotel & Spa 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Hotel 5 estrellas con espectacular piscina infinita climatizada en la azotea mirando a toda la ciudad y lago Hoan Kiem.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~108 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~216 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=The+Oriental+Jade+Hotel+Hanoi" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 2: Ninh Binh (2 Noches) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2.5 py-0.5 rounded-full uppercase">Parada 2 (2 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Ninh Binh: El Ha Long de la Tierra</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 36€ - 85€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=700&q=80" alt="Tam Coc Horizon" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Tam Coc Horizon Bungalow</h5>
+                  <p class="text-xs text-slate-500 mt-1">Bungalows integrados entre montañas kársticas, bicicletas gratuitas para pasear entre arrozales y trato familiar excepcional.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~38 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~76 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Tam+Coc+Horizon+Bungalow" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-rose-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Boutique Romántico</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=700&q=80" alt="Tam Coc Garden Resort" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Oasis de Lujo Rural</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Tam Coc Garden Resort</h5>
+                  <p class="text-xs text-slate-500 mt-1">Exclusivo resort boutique rodeado de arrozales y lagos de lotos. Casas tradicionales de piedra con porche privado y piscina.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~85 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~170 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-rose-50 border-t border-rose-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Tam+Coc+Garden+Resort" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-rose-700 hover:bg-rose-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=700&q=80" alt="Emeralda Resort Ninh Binh" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Eco-Resort 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Emeralda Resort Ninh Binh 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Complejo de 5 estrellas ambientado como un poblado real tonkinés, spa galardonado y piscinas junto a la reserva Van Long.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~98 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~196 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Emeralda+Resort+Ninh+Binh" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 3: Bahía de Halong / Lan Ha (1 Noche a Bordo en Crucero 5★ Pensión Completa) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2.5 py-0.5 rounded-full uppercase">Parada 3 (1 Noche a Bordo)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Bahía de Halong / Lan Ha: Crucero 5★ Pensión Completa</h4>
+            </div>
+            <span class="text-xs text-slate-500">Todo Incluido: Almuerzo, Cena, Desayuno, Excursiones & Kayak</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=700&q=80" alt="Athena Royal Cruise" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Athena Royal Cruise 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Camarote con balcón privado sobre la bahía, clase de Tai Chi al amanecer, clase de cocina vietnamita y excursión en kayak.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio total camarote (2 pax):</span>
+                    <strong class="text-slate-900 font-bold">~195 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Régimen:</span>
+                    <strong>Pensión Completa 2D/1N</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Athena+Royal+Cruise+Halong" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-rose-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Boutique Romántico</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Peony Cruises Lan Ha" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Bañera Panorámica 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Peony Cruises Lan Ha Bay 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Navega por la zona menos masificada de la bahía de Lan Ha. Suite con bañera de hidromasaje acristalada con vistas a los islotes.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio total camarote (2 pax):</span>
+                    <strong class="text-slate-900 font-bold">~240 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Régimen:</span>
+                    <strong>Pensión Completa 2D/1N</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-rose-50 border-t border-rose-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Peony+Cruises+Lan+Ha+Bay" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-rose-700 hover:bg-rose-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=700&q=80" alt="Mon Cheri Cruises" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Alta Gastronomía 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Mon Chéri Cruises 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Crucero de lujo enfocado en gastronomía gourmet, jacuzzi en cubierta superior, spa flotante y camarotes deluxe con terraza.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio total camarote (2 pax):</span>
+                    <strong class="text-slate-900 font-bold">~285 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Régimen:</span>
+                    <strong>Pensión Completa 2D/1N</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Mon+Cheri+Cruises+Halong" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 4: Hoi An (5 Noches) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2.5 py-0.5 rounded-full uppercase">Parada 4 (5 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Hoi An: Ciudad de Farolillos & Playa de An Bang</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 45€ - 110€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=700&q=80" alt="Little Hoi An" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Little Hoi An A Boutique Hotel & Spa</h5>
+                  <p class="text-xs text-slate-500 mt-1">A orillas del río Hoai y a 4 minutos a pie del puente japonés. Ambiente colonial intimo, piscina y alquiler de bicis gratuito.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~46 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 5 noches:</span>
+                    <strong>~230 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Little+Hoi+An+A+Boutique+Hotel+Spa" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-rose-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Boutique Romántico</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="La Siesta Hoi An Resort" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Top Parejas 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">La Siesta Hoi An Resort & Spa 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">4 piscinas de agua salada entre jardines tropicales y arrozales. Spa galardonado y transfer directo a la playa de An Bang.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~78 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 5 noches:</span>
+                    <strong>~390 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-rose-50 border-t border-rose-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=La+Siesta+Hoi+An+Resort+Spa" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-rose-700 hover:bg-rose-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=700&q=80" alt="Victoria Hoi An Beach" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Resort Frente al Mar</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Victoria Hoi An Beach Resort & Spa 4★ Sup</h5>
+                  <p class="text-xs text-slate-500 mt-1">Ubicado directamente sobre la playa de Cua Dai / An Bang con vistas al mar de China Meridional y arquitectura colonial indochina.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~112 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 5 noches:</span>
+                    <strong>~560 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Victoria+Hoi+An+Beach+Resort+Spa" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 5: Da Nang / Despedida (2 o 3 Noches) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2.5 py-0.5 rounded-full uppercase">Parada 5 (2 Noches / 3 si vuelta 29)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Da Nang: Playas Infinitas & Montañas de Mármol</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 42€ - 105€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80" alt="Sala Danang Beach Hotel" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Sala Danang Beach Hotel</h5>
+                  <p class="text-xs text-slate-500 mt-1">Frente a la playa de My Khe con espectacular piscina infinita panorámica en la planta 25, ideal para relax pre-vuelo.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~44 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~88 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Sala+Danang+Beach+Hotel" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-rose-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Boutique Romántico</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=700&q=80" alt="TMS Hotel Da Nang" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Piscina 360° 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">TMS Hotel Da Nang Beach 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Vistas directas al mar, habitaciones con terraza acristalada, spa de lujo y a 10 minutos del Puente del Dragón.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~72 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~144 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-rose-50 border-t border-rose-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=TMS+Hotel+Da+Nang+Beach" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-rose-700 hover:bg-rose-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-rose-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="Furama Resort Danang" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Lujo Emblemático</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Furama Resort Danang 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">El resort de playa más icónico de Vietnam central, laguna tropical interior, playa privada y cocina de alta gama.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~115 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-rose-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~230 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Furama+Resort+Danang" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- ================================================= -->
+    <!-- TAB 5: SRI LANKA (12/13 NOCHES) -->
+    <!-- ================================================= -->
+    <div id="tab-srilanka" class="tab-content space-y-8">
+      
+      <div class="hero-srilanka rounded-3xl p-6 sm:p-12 text-white shadow-xl relative overflow-hidden">
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 bg-amber-500/30 backdrop-blur text-amber-200 text-xs font-bold rounded-full mb-3 uppercase tracking-wider border border-amber-400/30">Opción 4 • Safari, Trenes & Chófer Privado</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-serif-title leading-tight">Sri Lanka: La Lágrima de la India</h2>
+          <p class="mt-3 text-slate-200 text-sm sm:text-base leading-relaxed">
+            1 noche en vuelo + **12 noches de hotel** (o 13 si vuelta el 29 de mayo): Sigiriya (3 noches) + Kandy (1 noche) + Tierras de Té & Ella (3 noches) + Safari Yala (2 noches) + Galle & Playas (3 o 4 noches).
+          </p>
+        </div>
+      </div>
+
+      <!-- Itinerario Completo Sri Lanka -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 font-serif-title">Itinerario Completo Día a Día (Sri Lanka)</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Plan diario detallado con vuestro chófer privado exclusivo:</p>
+        </div>
+
+        <div class="relative border-l-2 border-amber-400 ml-3 sm:ml-4 pl-5 sm:pl-6 space-y-6">
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-800">Día 1 • Sábado 15 Mayo</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Vuelo Internacional hacia Colombo (CMB)</h4>
+              <p class="text-xs text-slate-600 mt-1">Salida de España con Qatar Airways, Etihad o Turkish (1 escala). <strong>Noche 1 a bordo</strong>.</p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-amber-50/60 border border-amber-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-700 text-white">Día 2 • Domingo 16 Mayo (Noche 1 en Sigiriya)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Llegada a Sri Lanka ➔ Encuentro con Chófer y Traslado a Sigiriya</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Bienvenida en el aeropuerto por vuestro chófer/guía en vehículo privado con aire acondicionado.<br>
+                • Ruta hacia el Triángulo Cultural. Parada en las cuevas milenarias de <strong>Dambulla</strong> con sus 150 budas tallados.<br>
+                • Check-in en resort con piscina frente a la roca de Sigiriya.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">Día 3 • Lunes 17 Mayo (Noche 2 en Sigiriya)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Ascenso a la Roca del León en Sigiriya & Safari de Elefantes</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Amanecer:</strong> Ascenso a la cima de la mítica <strong>Lion Rock de Sigiriya</strong> (fortaleza del rey Kashyapa del siglo V).<br>
+                • <strong>Tarde:</strong> Safari en jeep 4x4 abierto por Minneriya para ver manadas de hasta 100 elefantes salvajes.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">Día 4 • Martes 18 Mayo (Noche 3 en Sigiriya)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Ruinas Antiguas de Polonnaruwa & Paseo en Carro Tradicional</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Visita a la segunda capital medieval de Sri Lanka en bicicleta o en coche con chófer.<br>
+                • Almuerzo tradicional singalés servido en hojas de plátano en una aldea rural.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-700 text-white">Día 5 • Miércoles 19 Mayo (Noche 1 en Kandy)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Kandy Sagrado: Templo del Diente & Jardines de Especias</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Parada en los jardines botánicos de Peradeniya y templo sagrado de la reliquia del Diente de Buda.<br>
+                • Noche en hotel señorial colonial en las colinas de Kandy.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-700 text-white">Días 6 al 8 • 20 al 22 Mayo (3 Noches en Ella & Tierras de Té)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">El Tren Azul Panorámico entre Campos de Té hacia Ella</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • <strong>Día 6:</strong> Embarque en el <strong>tren azul panorámico</strong> cruzando plantaciones de té hasta Ella.<br>
+                • <strong>Día 7:</strong> Paseo al icónico <strong>Nine Arches Bridge</strong> viendo cruzar el tren entre la niebla.<br>
+                • <strong>Día 8:</strong> Subida suave a <em>Little Adam's Peak</em> y visita a las cascadas Ravana Falls.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-rose-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-rose-50/60 border border-rose-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-700 text-white">Días 9 y 10 • 23 y 24 Mayo (2 Noches en Yala Safari)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Safari Salvaje en Yala: El Reino de los Leopardos</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Traslado al <strong>Parque Nacional Yala</strong>.<br>
+                • Safari al amanecer en jeep privado: Yala tiene la mayor densidad de leopardos del planeta, además de osos perezosos y cocodrilos.<br>
+                • Noche en lodge de safari con piscina junto a la naturaleza salvaje.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-teal-500 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-teal-50/70 border border-teal-200">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-teal-700 text-white">Días 11 al 13 • 25 al 27 Mayo (3 Noches en Galle & Costa)</span>
+              <h4 class="font-bold text-slate-900 text-sm sm:text-base mt-1">Fuerte Colonial Holandés de Galle & Playas</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                • Paseo por el interior de las murallas del <strong>Fuerte de Galle</strong> (patrimonio UNESCO): faro marítimo, bastiones holandeses y tiendas boutique.<br>
+                • Relax en resort boutique costero y fotos de los pescadores sobre zancos.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] sm:-left-[33px] top-1 w-4 h-4 rounded-full bg-slate-900 border-2 border-white shadow"></span>
+            <div class="p-4 rounded-2xl bg-slate-900 text-white">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-500 text-slate-950 font-black">Días 14 al 15 • 28 o 29 Mayo (Regreso a España)</span>
+              <h4 class="font-bold text-white text-sm sm:text-base mt-1">Traslado con Chófer al Aeropuerto & Regreso</h4>
+              <p class="text-xs text-slate-300 mt-1">
+                • Vuestro chófer os lleva por autopista hasta el Aeropuerto de Colombo CMB.<br>
+                • Vuelo de regreso a Madrid o Málaga.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hoteles Sri Lanka por Paradas (TODOS CON FOTO) -->
+      <!-- HOTELES SRI LANKA POR PARADAS (3 OPCIONES POR CADA PARADA) -->
+      <div class="space-y-6">
+        <div>
+          <span class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-50 border border-amber-200 rounded-full mb-2">3 Alternativas por Escala</span>
+          <h3 class="text-2xl font-bold text-slate-900 font-serif-title">Catálogo Completo de Hoteles y Lodges por Paradas (Sri Lanka)</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Opciones Calidad/Precio Top, Boutique Romántico y Lujo Asequible con fotos, precios y enlaces a Booking:</p>
+        </div>
+
+        <!-- Parada 1: Sigiriya (Triángulo Cultural - 3 Noches) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full uppercase">Parada 1 (3 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Sigiriya: Triángulo Cultural & Safari Minneriya</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 42€ - 110€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=700&q=80" alt="Kassapa Lions Rock" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Kassapa Lions Rock</h5>
+                  <p class="text-xs text-slate-500 mt-1">Bungalows individuales en plena naturaleza virgen con piscina al aire libre con vistas panorámicas a Sigiriya.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~42 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~126 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Kassapa+Lions+Rock+Sigiriya" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-amber-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Boutique Romántico</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Aliya Resort Sigiriya" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Vistas Icónicas 4★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Aliya Resort & Spa</h5>
+                  <p class="text-xs text-slate-500 mt-1">Piscina infinita épica orientada en línea recta a la Roca de Sigiriya. Arquitectura inspirada en elefantes y spa ayurvédico.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~75 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~225 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-amber-50 border-t border-amber-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Aliya+Resort+Spa+Sigiriya" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-amber-700 hover:bg-amber-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="Heritance Kandalama" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Obra Maestra 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Heritance Kandalama 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Hotel legendario diseñado por Geoffrey Bawa tallado en la roca sobre el lago Kandalama. Monos en las ramas y lujo total.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~115 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~345 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Heritance+Kandalama" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 2: Kandy (1 Noche) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full uppercase">Parada 2 (1 Noche)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Kandy: Ciudad Sagrada & Lago Imperial</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 48€ - 98€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80" alt="The Radh Hotel Kandy" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">The Radh Hotel Kandy 4★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Situado a 200 metros del sagrado Templo del Diente de Buda. Habitaciones modernas, comodísimas y restaurante Café Nihonbashi.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~52 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 1 noche:</span>
+                    <strong>~52 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=The+Radh+Hotel+Kandy" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-amber-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Boutique Romántico</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=700&q=80" alt="The Theva Residency Kandy" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Vistas a las Montañas</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">The Theva Residency</h5>
+                  <p class="text-xs text-slate-500 mt-1">Boutique de montaña en lo alto de Kandy con vistas espectaculares al valle, sauna, piscina infinita y cocina de autor.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~74 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 1 noche:</span>
+                    <strong>~74 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-amber-50 border-t border-amber-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=The+Theva+Residency+Kandy" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-amber-700 hover:bg-amber-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Earls Regency Hotel Kandy" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Lujo 5★ Colonial</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Earl's Regency Hotel 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Elegante resort 5 estrellas a orillas del río Mahaweli, jardines tropicales, spa de lujo y tranquilidad absoluta.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~98 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 1 noche:</span>
+                    <strong>~98 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Earls+Regency+Hotel+Kandy" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 3: Ella (Tierras Altas & Plantaciones de Té - 3 Noches) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full uppercase">Parada 3 (3 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Ella: Plantaciones de Té & Puente de los Nueve Arcos</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 38€ - 120€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=700&q=80" alt="Morning Dew Hotel Ella" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Morning Dew Hotel Ella</h5>
+                  <p class="text-xs text-slate-500 mt-1">Balcón privado con vistas directas a Ella Gap y las montañas nubladas. Desayunos caseros con té de Ceilán recién recolectado.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~38 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~114 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Morning+Dew+Hotel+Ella" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-amber-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Boutique Romántico</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Ella Flower Garden" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Jardines & Vistas</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Ella Flower Garden Resort</h5>
+                  <p class="text-xs text-slate-500 mt-1">Cabañas de madera rodeadas de flores tropicales en el sendero hacia Little Adam's Peak. Ambiente romántico y acogedor.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~70 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~210 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-amber-50 border-t border-amber-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Ella+Flower+Garden+Resort" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-amber-700 hover:bg-amber-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="98 Acres Resort Ella" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Capricho Lujo Icónico</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">98 Acres Resort & Spa 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">El resort más famoso y codiciado de Sri Lanka. Chalets de lujo construidos con traviesas de tren frente al abismo de Ella.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~125 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~375 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=98+Acres+Resort+Spa+Ella" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 4: Yala Safari (2 Noches) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full uppercase">Parada 4 (2 Noches)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Yala: Safari de Leopardos & Naturaleza Salvaje</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 55€ - 130€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=700&q=80" alt="Kithala Resort Yala" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Kithala Resort Yala 4★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Rodeado de arrozales y lagunas donde avistar aves tropicales. Excelente base para los safaris al amanecer en jeep 4x4.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~54 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~108 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Kithala+Resort+Yala" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-amber-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Boutique Romántico</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80" alt="Cinnamon Wild Yala" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Experiencia Salvaje 4★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Cinnamon Wild Yala</h5>
+                  <p class="text-xs text-slate-500 mt-1">Ubicado en el linde del Parque Nacional. Es habitual ver elefantes, ciervos y jabalíes bebiendo en la laguna desde la piscina.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~108 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~216 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-amber-50 border-t border-amber-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Cinnamon+Wild+Yala" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-amber-700 hover:bg-amber-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=700&q=80" alt="Jetwing Yala" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Lujo Safari & Mar 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Jetwing Yala 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Complejo ecológico de 5 estrellas donde la selva de Yala se funde con las dunas y la playa virgen del Índico. Piscina de 75 metros.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~130 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 2 noches:</span>
+                    <strong>~260 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Jetwing+Yala" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Parada 5: Galle Fort / Costa Sur (3 o 4 Noches) -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div>
+              <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full uppercase">Parada 5 (3 Noches / 4 si vuelta 29)</span>
+              <h4 class="text-lg font-bold text-slate-900 mt-1">Galle Fort: Murallas Holandesas & Playas del Sur</h4>
+            </div>
+            <span class="text-xs text-slate-500">Media 48€ - 115€ / noche</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+            
+            <!-- Opción 1 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=700&q=80" alt="Fortaleza Galle Fort" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Calidad/Precio Top</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Fortaleza Galle Fort</h5>
+                  <p class="text-xs text-slate-500 mt-1">Casona colonial restaurada en el corazón de las callejuelas empedradas del Fuerte de Galle, rodeada de galerías y cafeterías.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~52 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~156 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Fortaleza+Galle+Fort" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="border-2 border-amber-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-md relative">
+              <span class="absolute top-2.5 right-2.5 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Boutique Romántico</span>
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Le Grand Galle" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Frente al Océano 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Le Grand Galle by Asia Leisure 5★</h5>
+                  <p class="text-xs text-slate-500 mt-1">Piscina infinita con vistas directas a los bastiones del Fuerte de Galle y al romper de las olas. Habitaciones con jacuzzi privado.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~88 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~264 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-amber-50 border-t border-amber-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Le+Grand+Galle+by+Asia+Leisure" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-amber-700 hover:bg-amber-800 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 transition-all">
+              <div>
+                <div class="relative h-44 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=700&q=80" alt="Tamarind Hill Galle" class="w-full h-full object-cover">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">Lujo Histórico 5★</span>
+                </div>
+                <div class="p-4">
+                  <h5 class="font-bold text-slate-900 text-sm">Tamarind Hill Galle by Asia Leisure</h5>
+                  <p class="text-xs text-slate-500 mt-1">Mansión señorial de 250 años con galerías de teca, patios andaluces tropicales y servicio de mayordomo privado.</p>
+                  <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-xs">
+                    <span>Precio/noche:</span>
+                    <strong class="text-slate-900 font-bold">~118 €</strong>
+                  </div>
+                  <div class="flex justify-between text-xs text-amber-700 font-semibold mt-1">
+                    <span>Total 3 noches:</span>
+                    <strong>~354 € (pareja)</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 border-t border-slate-100">
+                <a href="https://www.booking.com/searchresults.es.html?ss=Tamarind+Hill+Galle" target="_blank" rel="noopener noreferrer" class="block text-center py-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-sm transition">
+                  Ver en Booking.com ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- ================================================= -->
+    <!-- TAB 6: SIMULADOR DE PRESUPUESTO 4 PAÍSES -->
+    <!-- ================================================= -->
+    <div id="tab-simulador" class="tab-content space-y-8">
+      
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-800 bg-teal-50 border border-teal-200 rounded-full mb-3">Simulador 100% Exhaustivo</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-serif-title">Simulador de Presupuesto Real (Todos los Costes Incluidos)</h2>
+          <p class="mt-2 text-slate-600 text-sm sm:text-base">
+            Configura cada variable del viaje: vuelos (Madrid vs Málaga, vuelta 28 vs 29), hoteles (12 vs 13 noches), transportes con chófer, comidas estimadas, <strong>visados oficiales obligatorios, eSIM de datos, seguro médico IATI, cruceros, safaris y masajes</strong>:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-8 pt-6 border-t border-slate-100">
+          
+          <!-- CONTROLES (7 COLUMNAS) -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- 1. País -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">1. Selecciona Destino</label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <button type="button" onclick="setSimDestino('indonesia')" id="sim-btn-indonesia" class="p-3 rounded-2xl border-2 border-teal-500 bg-teal-50 text-left font-bold text-xs text-slate-900">
+                  <span>🇮🇩 Indonesia</span>
+                  <span class="block text-[10px] text-teal-700 font-semibold mt-0.5">Top Clima Mayo</span>
+                </button>
+                <button type="button" onclick="setSimDestino('malasia')" id="sim-btn-malasia" class="p-3 rounded-2xl border-2 border-slate-200 bg-white text-left font-bold text-xs text-slate-700">
+                  <span>🇲🇾 Malasia</span>
+                  <span class="block text-[10px] text-slate-400 font-semibold mt-0.5">Más Económico</span>
+                </button>
+                <button type="button" onclick="setSimDestino('vietnam')" id="sim-btn-vietnam" class="p-3 rounded-2xl border-2 border-slate-200 bg-white text-left font-bold text-xs text-slate-700">
+                  <span>🇻🇳 Vietnam</span>
+                  <span class="block text-[10px] text-slate-400 font-semibold mt-0.5">Crucero Halong</span>
+                </button>
+                <button type="button" onclick="setSimDestino('srilanka')" id="sim-btn-srilanka" class="p-3 rounded-2xl border-2 border-slate-200 bg-white text-left font-bold text-xs text-slate-700">
+                  <span>🇱🇰 Sri Lanka</span>
+                  <span class="block text-[10px] text-slate-400 font-semibold mt-0.5">Chófer Privado</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Vuelos: Salida y Fecha Vuelta -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">2. Aeropuerto de Salida</label>
+                <div class="grid grid-cols-2 gap-2">
+                  <label class="border-2 border-teal-500 rounded-xl p-2.5 flex items-center justify-between cursor-pointer text-xs bg-teal-50/30">
+                    <input type="radio" name="originCity" value="MAD" checked onchange="recalculateBudget()" class="text-teal-600">
+                    <span class="font-bold text-slate-900 ml-1.5">Madrid (MAD)</span>
+                  </label>
+                  <label class="border border-slate-200 rounded-xl p-2.5 flex items-center justify-between cursor-pointer text-xs bg-slate-50">
+                    <input type="radio" name="originCity" value="AGP" onchange="recalculateBudget()" class="text-teal-600">
+                    <span class="font-bold text-slate-900 ml-1.5">Málaga (AGP)</span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">3. Fecha Regreso & Noches</label>
+                <div class="grid grid-cols-2 gap-2">
+                  <label class="border-2 border-teal-500 rounded-xl p-2.5 flex flex-col cursor-pointer text-xs bg-teal-50/30">
+                    <div class="flex items-center justify-between">
+                      <input type="radio" name="returnDate" value="28" checked onchange="recalculateBudget()" class="text-teal-600">
+                      <span class="font-bold text-emerald-600 text-[10px]">Ahorro ~100€</span>
+                    </div>
+                    <span class="font-bold text-slate-900 mt-1">Vie 28 May (12n)</span>
+                  </label>
+                  <label class="border border-slate-200 rounded-xl p-2.5 flex flex-col cursor-pointer text-xs bg-slate-50">
+                    <div class="flex items-center justify-between">
+                      <input type="radio" name="returnDate" value="29" onchange="recalculateBudget()" class="text-teal-600">
+                      <span class="font-medium text-slate-400 text-[10px]">+1 día viaje</span>
+                    </div>
+                    <span class="font-bold text-slate-900 mt-1">Sáb 29 May (13n)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Categoría de Hoteles -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">4. Categoría de Hoteles</label>
+              <div class="grid grid-cols-3 gap-3">
+                <label class="border border-slate-200 rounded-xl p-3 flex flex-col justify-between cursor-pointer text-xs bg-slate-50">
+                  <input type="radio" name="hotelTier" value="smart" onchange="recalculateBudget()" class="text-teal-600 mb-1">
+                  <span class="font-bold text-slate-900">Calidad/Precio</span>
+                  <span class="text-slate-500 mt-0.5" id="sim-hotel-tier-smart-price">~52€/noche</span>
+                </label>
+                <label class="border-2 border-teal-500 rounded-xl p-3 flex flex-col justify-between cursor-pointer text-xs bg-teal-50/40">
+                  <input type="radio" name="hotelTier" value="boutique" checked onchange="recalculateBudget()" class="text-teal-600 mb-1">
+                  <span class="font-bold text-slate-900">Boutique Romántico</span>
+                  <span class="text-teal-700 font-semibold mt-0.5" id="sim-hotel-tier-boutique-price">~75€/noche</span>
+                </label>
+                <label class="border border-slate-200 rounded-xl p-3 flex flex-col justify-between cursor-pointer text-xs bg-slate-50">
+                  <input type="radio" name="hotelTier" value="luxury" onchange="recalculateBudget()" class="text-teal-600 mb-1">
+                  <span class="font-bold text-slate-900">Capricho Lujo 5★</span>
+                  <span class="text-slate-500 mt-0.5" id="sim-hotel-tier-luxury-price">~112€/noche</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 5. Extras, Visados, Seguros & Actividades -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">5. Extras y Requisitos Oficiales (Desglose Pareja)</label>
+              <div class="space-y-2.5 text-xs">
+                
+                <!-- Visados Oficiales -->
+                <label class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="sim-visas-check" checked onchange="recalculateBudget()" class="rounded text-teal-600">
+                    <div>
+                      <span class="font-bold text-slate-900">Visados Oficiales & Tasas de Entrada (2 pax)</span>
+                      <span class="block text-[11px] text-slate-500" id="sim-visa-desc">VoA Indonesia (35$/pax) + Tasa Bali (150k IDR)</span>
+                    </div>
+                  </div>
+                  <strong class="text-slate-900" id="sim-visa-cost">82 €</strong>
+                </label>
+
+                <!-- Tours y Actividades Clave -->
+                <label class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="sim-tours-check" checked onchange="recalculateBudget()" class="rounded text-teal-600">
+                    <div>
+                      <span class="font-bold text-slate-900">Tours Clave / Crucero Halong / Safari Yala</span>
+                      <span class="block text-[11px] text-slate-500" id="sim-tour-desc">Snorkel tortugas en Gili, templos balineses y cascadas</span>
+                    </div>
+                  </div>
+                  <strong class="text-slate-900" id="sim-tour-cost">160 €</strong>
+                </label>
+
+                <!-- Spas y Masajes en pareja -->
+                <label class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="sim-spas-check" checked onchange="recalculateBudget()" class="rounded text-teal-600">
+                    <div>
+                      <span class="font-bold text-slate-900">Spas & Masajes Tradicionales en Pareja</span>
+                      <span class="block text-[11px] text-slate-500">4 sesiones completas de 60-90 min (balinés / ayurvédico)</span>
+                    </div>
+                  </div>
+                  <strong class="text-slate-900">90 €</strong>
+                </label>
+
+                <!-- Seguro Médico IATI -->
+                <label class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="sim-insurance-check" checked onchange="recalculateBudget()" class="rounded text-teal-600">
+                    <div>
+                      <span class="font-bold text-slate-900">Seguro de Viaje IATI Estrella + Cancelación</span>
+                      <span class="block text-[11px] text-slate-500">500.000€ asistencia médica + repatriación + anulación justificada</span>
+                    </div>
+                  </div>
+                  <strong class="text-slate-900">130 €</strong>
+                </label>
+
+                <!-- Conectividad eSIM -->
+                <label class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="sim-esim-check" checked onchange="recalculateBudget()" class="rounded text-teal-600">
+                    <div>
+                      <span class="font-bold text-slate-900">2 Tarjetas eSIM Datos Ilimitados (Holafly / Airalo)</span>
+                      <span class="block text-[11px] text-slate-500">Internet 4G/5G en ambos teléfonos todo el viaje</span>
+                    </div>
+                  </div>
+                  <strong class="text-slate-900">46 €</strong>
+                </label>
+
+                <!-- Propinas y fondo de viaje -->
+                <label class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="sim-tips-check" checked onchange="recalculateBudget()" class="rounded text-teal-600">
+                    <div>
+                      <span class="font-bold text-slate-900">Fondo para Propinas & Pequeños Caprichos</span>
+                      <span class="block text-[11px] text-slate-500">Propinas maleteros/chófer, lavandería en hotel y detalles</span>
+                    </div>
+                  </div>
+                  <strong class="text-slate-900">70 €</strong>
+                </label>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- PANEL RESUMEN TOTAL A LA DERECHA (5 COLUMNAS) -->
+          <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 text-white p-6 sm:p-7 rounded-3xl shadow-2xl flex flex-col justify-between border border-slate-800">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold tracking-wider uppercase text-teal-400" id="sim-dest-title">Estimación Indonesia (Bali & Gili)</span>
+                <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded-full border border-slate-700" id="sim-nights-badge">12 noches hotel</span>
+              </div>
+              
+              <div class="mt-3 flex items-baseline gap-2">
+                <span class="text-4xl sm:text-5xl font-black text-white" id="sim-total-couple">3.648 €</span>
+                <span class="text-xs text-slate-400">/ total pareja</span>
+              </div>
+              
+              <div class="mt-3 p-3 rounded-2xl bg-slate-800/90 border border-slate-700/80 flex justify-between items-center text-xs">
+                <div>
+                  <span class="text-slate-300 block font-medium">Coste por persona:</span>
+                  <span class="text-[10px] text-slate-400">Todo incluido (vuelos, hoteles, comidas, seguro...)</span>
+                </div>
+                <strong class="text-emerald-400 font-extrabold text-xl tracking-tight" id="sim-total-person">1.824 €</strong>
+              </div>
+
+              <!-- DESGLOSE DETALLADO LÍNEA A LÍNEA -->
+              <div class="mt-6 space-y-2.5 text-xs text-slate-300 pt-4 border-t border-slate-800">
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>✈️</span> Vuelos Internacionales (2 pax):
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-flights">1.480 €</strong>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>🏨</span> Hoteles (<span id="sim-bd-hotel-count">12</span> noches):
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-hotels">936 €</strong>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>🚗</span> Transportes / Chófer / Barcos:
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-transports">260 €</strong>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>🍜</span> Comidas & Cenas estimadas (<span id="sim-bd-days-count">12</span> días):
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-meals">540 €</strong>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>🛂</span> Visados Oficiales & Tasas:
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-visas">82 €</strong>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>🎟️</span> Tours, Entradas & Actividades:
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-tours">160 €</strong>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>💆</span> Spas & Masajes en pareja:
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-spas">90 €</strong>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>🛡️</span> Seguro Médico IATI + Cancelación:
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-insurance">130 €</strong>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>📱</span> eSIM Datos Ilimitados (2 móviles):
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-esim">46 €</strong>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="flex items-center gap-1.5">
+                    <span>💵</span> Fondo Propinas & Caprichos:
+                  </span>
+                  <strong class="text-white font-semibold" id="sim-bd-tips">70 €</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- SEMÁFORO DE PRESUPUESTO -->
+            <div class="mt-6 pt-4 border-t border-slate-800 text-center" id="sim-budget-status">
+              <span class="inline-block px-3 py-1.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                ✅ Dentro de Vuestro Rango Objetivo (1.500€ - 2.000€ / persona)
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    
+
+    <!-- ================================================= -->
+    <!-- TAB 7: VEREDICTO & CLIMA MAYO -->
+    <!-- ================================================= -->
+    <div id="tab-comparador" class="tab-content space-y-8">
+      
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-serif-title">Veredicto y Consejos para Elegir en Pareja</h2>
+          <p class="mt-2 text-slate-600 text-sm sm:text-base">
+            Las 4 opciones encajan de lleno en vuestro presupuesto. Para desempatar según vuestro estilo de viaje:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-xs sm:text-sm">
+          
+          <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
+            <h3 class="font-bold text-emerald-950 text-base flex items-center gap-2">
+              <span>🇮🇩</span> Elegid INDONESIA si:
+            </h3>
+            <p class="text-emerald-900 mt-2 leading-relaxed">
+              Buscáis el viaje <strong>más romántico, relajante y con el clima más perfecto del continente en mayo</strong>. Villas privadas con piscina, masajes balineses diarios y días de playa sin vehículos de motor en Gili Air.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-blue-50 border border-blue-200">
+            <h3 class="font-bold text-blue-950 text-base flex items-center gap-2">
+              <span>🇲🇾</span> Elegid MALASIA si:
+            </h3>
+            <p class="text-blue-900 mt-2 leading-relaxed">
+              Queréis la opción con <strong>mayor ahorro económico (sobrarán unos 700€ del presupuesto)</strong>, rascacielos impresionantes, la mejor comida callejera de Asia en Penang y buceo idílico con tortugas en Perhentian.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-rose-50 border border-rose-200">
+            <h3 class="font-bold text-rose-950 text-base flex items-center gap-2">
+              <span>🇻🇳</span> Elegid VIETNAM si:
+            </h3>
+            <p class="text-rose-900 mt-2 leading-relaxed">
+              Vuestro sueño es <strong>dormir en un barco de lujo 5 estrellas en la Bahía de Halong</strong> y pasear en barca por los canales iluminados por miles de farolillos de seda en Hoi An, combinando cultura, playa y gastronomía.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-amber-50 border border-amber-200">
+            <h3 class="font-bold text-amber-950 text-base flex items-center gap-2">
+              <span>🇱🇰</span> Elegid SRI LANKA si:
+            </h3>
+            <p class="text-amber-900 mt-2 leading-relaxed">
+              Queréis la <strong>máxima comodidad de tener un chófer privado todo el viaje</strong>, hacer safaris salvajes en 4x4 en busca de leopardos y elefantes en Yala, y cruzar las plantaciones de té en el mítico tren azul de Ceilán.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- MOBILE BOTTOM STICKY BAR -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 p-3 z-50 flex items-center justify-between px-4">
+    <div>
+      <span class="text-[10px] text-slate-400 block">Presupuesto 4 Países</span>
+      <span class="text-sm font-black text-emerald-400">1.615€ - 1.810€ / pers</span>
+    </div>
+    <div class="flex gap-2">
+      <button onclick="switchTab('tab-vuelos')" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-semibold">
+        ✈️ Vuelos
+      </button>
+      <button onclick="switchTab('tab-simulador')" class="px-3 py-1.5 rounded-lg bg-teal-500 text-slate-950 text-xs font-bold shadow">
+        🧮 Simular
+      </button>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(function(content) {
+        content.classList.remove('active');
+      });
+      document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        btn.classList.remove('border-teal-400', 'text-teal-400');
+        btn.classList.add('border-transparent', 'text-slate-400');
+      });
+
+      const target = document.getElementById(tabId);
+      if (target) {
+        target.classList.add('active');
+      }
+      const activeBtn = document.getElementById('btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.remove('border-transparent', 'text-slate-400');
+        activeBtn.classList.add('border-teal-400', 'text-teal-400');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    let currentSimDest = 'indonesia';
+
+    function setSimDestino(dest) {
+      currentSimDest = dest;
+      const allDests = ['indonesia', 'malasia', 'vietnam', 'srilanka'];
+      allDests.forEach(function(d) {
+        const btn = document.getElementById('sim-btn-' + d);
+        if (btn) {
+          if (d === dest) {
+            btn.className = 'p-3 rounded-2xl border-2 border-teal-500 bg-teal-50 text-left font-bold text-xs text-slate-900';
+          } else {
+            btn.className = 'p-3 rounded-2xl border-2 border-slate-200 bg-white text-left font-bold text-xs text-slate-700';
+          }
+        }
+      });
+      recalculateBudget();
+    }
+
+    function recalculateBudget() {
+      const originCityInput = document.querySelector('input[name="originCity"]:checked');
+      const originCity = originCityInput ? originCityInput.value : 'MAD';
+
+      const returnDateInput = document.querySelector('input[name="returnDate"]:checked');
+      const returnDate = returnDateInput ? returnDateInput.value : '28';
+      const numNights = returnDate === '29' ? 13 : 12;
+
+      const hotelTierInput = document.querySelector('input[name="hotelTier"]:checked');
+      const hotelTier = hotelTierInput ? hotelTierInput.value : 'boutique';
+
+      const incVisas = document.getElementById('sim-visas-check').checked;
+      const incTours = document.getElementById('sim-tours-check').checked;
+      const incSpas = document.getElementById('sim-spas-check').checked;
+      const incInsurance = document.getElementById('sim-insurance-check').checked;
+      const incEsim = document.getElementById('sim-esim-check').checked;
+      const incTips = document.getElementById('sim-tips-check').checked;
+
+      // Base flight costs (Return May 28)
+      // If return on May 29 (Saturday), flights typically cost +90€ total couple
+      // Málaga (AGP) is typically ~50€ more per couple than Madrid (MAD)
+      let baseFlightMAD28 = 1480;
+      let destName = "Indonesia (Bali & Gili)";
+      let transports = 260;
+      let visaCost = 82; // VoA 35$ + Bali tax 150k IDR for 2 pax
+      let visaDesc = "VoA Indonesia (35$/pax) + Tasa Bali (150k IDR)";
+      let tourCost = 160;
+      let tourDesc = "Snorkel tortugas en Gili, templos balineses y cascadas";
+      let smartNight = 58;
+      let boutiqueNight = 78;
+      let luxuryNight = 115;
+
+      if (currentSimDest === 'indonesia') {
+        baseFlightMAD28 = 1480;
+        destName = "Indonesia (Bali & Gili)";
+        transports = 260; // Fast boat Gili + transfers + day drivers
+        visaCost = 82;
+        visaDesc = "VoA Indonesia (35$/pax) + Tasa Oficial Bali (150.000 IDR/pax)";
+        tourCost = 160;
+        tourDesc = "Snorkel privado tortugas en Gili, templos balineses y cascadas";
+        smartNight = 58;
+        boutiqueNight = 78;
+        luxuryNight = 115;
+      } else if (currentSimDest === 'malasia') {
+        baseFlightMAD28 = 1240;
+        destName = "Malasia & Perhentian";
+        transports = 240; // Internal flights + speedboat Perhentian + Grab
+        visaCost = 0; // MDAC free
+        visaDesc = "Tarjeta digital de llegada MDAC (100% Gratuita)";
+        tourCost = 120;
+        tourDesc = "Snorkel tiburones de arrecife en Perhentian y mirador KLCC";
+        smartNight = 52;
+        boutiqueNight = 72;
+        luxuryNight = 105;
+      } else if (currentSimDest === 'vietnam') {
+        baseFlightMAD28 = 1500;
+        destName = "Vietnam (Halong, Ninh Binh & Hoi An)";
+        transports = 230; // Internal flight Da Nang + private transfers
+        visaCost = 46; // e-Visa 25$ x 2
+        visaDesc = "e-Visa electrónica oficial de Vietnam (25$/pax)";
+        tourCost = 220; // 5★ cruise supplements + Trang An boat + lantern boat
+        tourDesc = "Crucero 5★ pensión completa Halong Bay + barcas Trang An";
+        smartNight = 50;
+        boutiqueNight = 74;
+        luxuryNight = 108;
+      } else if (currentSimDest === 'srilanka') {
+        baseFlightMAD28 = 1360;
+        destName = "Sri Lanka (Con Chófer Privado)";
+        transports = 480; // Private car with English-speaking chauffeur the whole trip
+        visaCost = 92; // ETA 50$ x 2
+        visaDesc = "ETA turística oficial de Sri Lanka (50$/pax)";
+        tourCost = 210; // 4x4 safari Jeep Yala + Sigiriya & Tooth temple entrance
+        tourDesc = "Jeep 4x4 privado Safari Yala + Entradas Roca Sigiriya";
+        smartNight = 54;
+        boutiqueNight = 75;
+        luxuryNight = 110;
+      }
+
+      // Flight calculation
+      let flightPrice = baseFlightMAD28;
+      if (returnDate === '29') {
+        flightPrice += 90; // Saturday return flight premium
+      }
+      if (originCity === 'AGP') {
+        flightPrice += 50; // Málaga connection delta
+      }
+
+      // Hotel calculation
+      const baseNightPrice = hotelTier === 'smart' ? smartNight : (hotelTier === 'boutique' ? boutiqueNight : luxuryNight);
+      const hotelPrice = baseNightPrice * numNights;
+
+      // Meals calculation (~45€/day for 2 pax)
+      const mealsPrice = 45 * numNights;
+
+      // Extras calculation
+      const actualVisa = incVisas ? visaCost : 0;
+      const actualTours = incTours ? tourCost : 0;
+      const actualSpas = incSpas ? 90 : 0;
+      const actualInsurance = incInsurance ? 130 : 0;
+      const actualEsim = incEsim ? 46 : 0;
+      const actualTips = incTips ? 70 : 0;
+
+      const totalCouple = flightPrice + hotelPrice + transports + mealsPrice + actualVisa + actualTours + actualSpas + actualInsurance + actualEsim + actualTips;
+      const perPerson = Math.round(totalCouple / 2);
+
+      // Update UI elements
+      document.getElementById('sim-dest-title').innerText = "Estimación " + destName;
+      document.getElementById('sim-nights-badge').innerText = numNights + ' noches hotel';
+      document.getElementById('sim-hotel-tier-smart-price').innerText = '~' + smartNight + '€/noche';
+      document.getElementById('sim-hotel-tier-boutique-price').innerText = '~' + boutiqueNight + '€/noche';
+      document.getElementById('sim-hotel-tier-luxury-price').innerText = '~' + luxuryNight + '€/noche';
+
+      document.getElementById('sim-visa-desc').innerText = visaDesc;
+      document.getElementById('sim-visa-cost').innerText = visaCost + ' €';
+      document.getElementById('sim-tour-desc').innerText = tourDesc;
+      document.getElementById('sim-tour-cost').innerText = tourCost + ' €';
+
+      document.getElementById('sim-total-couple').innerText = totalCouple.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-total-person').innerText = perPerson.toLocaleString('es-ES') + ' €';
+
+      document.getElementById('sim-bd-flights').innerText = flightPrice.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-bd-hotels').innerText = hotelPrice.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-bd-hotel-count').innerText = numNights;
+      document.getElementById('sim-bd-transports').innerText = transports.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-bd-meals').innerText = mealsPrice.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-bd-days-count').innerText = numNights;
+      document.getElementById('sim-bd-visas').innerText = actualVisa.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-bd-tours').innerText = actualTours.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-bd-spas').innerText = actualSpas.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-bd-insurance').innerText = actualInsurance.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-bd-esim').innerText = actualEsim.toLocaleString('es-ES') + ' €';
+      document.getElementById('sim-bd-tips').innerText = actualTips.toLocaleString('es-ES') + ' €';
+
+      const statusBox = document.getElementById('sim-budget-status');
+      if (statusBox) {
+        if (perPerson <= 2000) {
+          statusBox.innerHTML = '<span class="inline-block px-3 py-1.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">✅ Dentro de Vuestro Rango Objetivo (1.500€ - 2.000€ / persona)</span>';
+        } else {
+          statusBox.innerHTML = '<span class="inline-block px-3 py-1.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">⚠️ Supera ligeramente el objetivo (+' + (perPerson - 2000) + '€/persona)</span>';
+        }
+      }
+
+      const headerIndicator = document.getElementById('header-budget-indicator');
+      if (headerIndicator) {
+        headerIndicator.innerText = perPerson.toLocaleString('es-ES') + ' € / pers';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      recalculateBudget();
+    });
+  </script>
+</body>
+</html>
