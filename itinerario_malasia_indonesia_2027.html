@@ -28,6 +28,18 @@
       background: linear-gradient(180deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.95) 100%), 
                   url('img/d09_ulundanu.jpg') center/cover no-repeat;
     }
+    main article img, #tab-hoteles img {
+      cursor: zoom-in;
+      transition: transform 0.25s ease;
+    }
+    main article img:hover, #tab-hoteles img:hover {
+      transform: scale(1.015);
+    }
+    @media print {
+      header nav, button, #photo-lightbox { display: none !important; }
+      .tab-content { display: block !important; page-break-after: always; }
+      body { background: #ffffff !important; padding-bottom: 0 !important; }
+    }
   </style>
 </head>
 <body class="bg-slate-100 text-slate-800 antialiased selection:bg-teal-500 selection:text-white pb-24 md:pb-12">
@@ -869,8 +881,8 @@
           </div>
           <div class="bg-slate-800 p-4 rounded-2xl border border-slate-700 text-right">
             <div class="text-xs text-slate-400 uppercase font-semibold">Total Vuelos (Int. + 3 Domésticos)</div>
-            <div class="text-2xl font-extrabold text-teal-400">657,00 € / pers</div>
-            <div class="text-[11px] text-slate-300">479 € (Saudia Ya Pagado) + 178 € (3 internos en Skyscanner hoy)</div>
+            <div class="text-2xl font-extrabold text-teal-400">648 € – 673 € / pers</div>
+            <div class="text-[11px] text-slate-300">479 € (Saudia Ya Pagado) + 169 € (Garuda 5★ Google Flights) / 178 € (Citilink) / 194 € (Mixta T3)</div>
           </div>
         </div>
 
@@ -1981,8 +1993,26 @@
 
       <!-- CONFIGURADOR INTERACTIVO DE PRESUPUESTO A MEDIDA -->
       <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
-        <h3 class="text-xl font-bold font-serif text-slate-900">🎛️ Calculadora Interactiva de Ignacio & Esmeralda: Elegid Hotel en cada Parada</h3>
-        <p class="text-xs sm:text-sm text-slate-600 mt-1">Cambiad el hotel de cada destino o la opción de la escala en Yeda y ved al instante cuánto os cuesta por persona y cuánto os queda pendiente de pago.</p>
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-xl font-bold font-serif text-slate-900">🎛️ Calculadora Interactiva de Ignacio & Esmeralda: Configurador a Medida</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">Pulsad un botón rápido para cargar cualquiera de las columnas de la tabla o combinad libremente hotel, vuelos internos, escala en Yeda y nivel gastronómico.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button type="button" onclick="applyPreset('smart')" class="px-3 py-1.5 rounded-xl border border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs transition">
+              Opción 1 Smart (1.733,15 €)
+            </button>
+            <button type="button" onclick="applyPreset('seleccion')" class="px-3 py-1.5 rounded-xl border-2 border-teal-500 bg-teal-50 hover:bg-teal-100 text-teal-900 font-extrabold text-xs transition">
+              ⭐ Opción 2 Selección (1.849,15 €)
+            </button>
+            <button type="button" onclick="applyPreset('truco')" class="px-3 py-1.5 rounded-xl border-2 border-amber-500 bg-amber-50 hover:bg-amber-100 text-amber-950 font-extrabold text-xs transition">
+              💎 Selección + Google Flights (1.824,15 €)
+            </button>
+            <button type="button" onclick="applyPreset('lujo')" class="px-3 py-1.5 rounded-xl border border-slate-300 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition">
+              Opción 3 Lujo 5★ (2.101,15 €)
+            </button>
+          </div>
+        </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-5">
           <div class="lg:col-span-7 space-y-3 text-xs sm:text-sm">
@@ -2035,13 +2065,20 @@
                   <option value="76">Aerotel Jeddah dentro T1 (76 €/pers - 152€ hab)</option>
                 </select>
               </div>
-              <div class="sm:col-span-2">
-                <label class="font-bold text-teal-800 block mb-1">7. Categoría de los 3 Vuelos Internos (CGK➔YIA, SUB➔DPS y DPS➔CGK):</label>
+              <div>
+                <label class="font-bold text-teal-800 block mb-1">7. Categoría de los 3 Vuelos Internos:</label>
                 <select id="calc-flights" onchange="updateBudget()" class="w-full p-2.5 rounded-xl border-2 border-teal-500 bg-teal-50/50 font-bold text-slate-900">
-                  <option value="169">💎 Truco Google Flights: Todo Garuda Indonesia 5★ en Terminal 3 (54€ + 47€ + 68€ = 169 €/pers)</option>
-                  <option value="178">Skyscanner Opción 1 (Más barata Low-Cost): Todo Citilink por Terminal 1B (58€ + 58€ + 62€ = 178 €/pers)</option>
-                  <option value="194" selected>⭐ Skyscanner Opción 2 (Equilibrio): Garuda 5★ en Ida T3 + 2 Citilink (74€ + 58€ + 62€ = 194 €/pers)</option>
-                  <option value="220">Skyscanner Opción 3 (Todo 5★ en Skyscanner): Todo Garuda Indonesia 5★ en T3 (74€ + 68€ + 78€ = 220 €/pers)</option>
+                  <option value="169">💎 Google Flights: Todo Garuda 5★ T3 (169 €/pers)</option>
+                  <option value="178">Skyscanner Opción 1: Todo Citilink T1B (178 €/pers)</option>
+                  <option value="194" selected>⭐ Skyscanner Opción 2: Garuda Ida T3 + Citilink (194 €/pers)</option>
+                  <option value="220">Skyscanner Opción 3: Todo Garuda 5★ T3 (220 €/pers)</option>
+                </select>
+              </div>
+              <div>
+                <label class="font-bold text-slate-700 block mb-1">8. Comidas, Cenas y Masajes (14 días):</label>
+                <select id="calc-meals" onchange="updateBudget()" class="w-full p-2.5 rounded-xl border border-slate-300 bg-slate-50 font-semibold">
+                  <option value="156" selected>⭐ Estándar + Mariscada Jimbaran (156 €/pers)</option>
+                  <option value="210">Gourmet / Restaurantes de Autor 5★ (210 €/pers)</option>
                 </select>
               </div>
             </div>
@@ -2063,8 +2100,12 @@
                 <span id="calc-hotels-pax" class="font-bold text-white">452,00 € / pers (904,00 € pareja)</span>
               </div>
               <div class="flex justify-between text-slate-300">
-                <span>• Vuelos internos + Tren + Excursiones + Comidas:</span>
-                <span id="calc-rest-pax" class="font-bold text-white">837,65 € / pers</span>
+                <span>• 3 Vuelos internos seleccionados:</span>
+                <span id="calc-flights-pax" class="font-bold text-teal-300">194,00 € / pers (388,00 € pareja)</span>
+              </div>
+              <div class="flex justify-between text-slate-300">
+                <span>• Tren + Excursiones (361,65€) + Visados/Coche (126€) + Comidas:</span>
+                <span id="calc-rest-pax" class="font-bold text-white">643,65 € / pers</span>
               </div>
               <div class="flex justify-between text-amber-300 font-extrabold text-sm pt-2 border-t border-slate-800">
                 <span>⏳ Pendiente por pagar de aquí al viaje:</span>
@@ -2161,6 +2202,17 @@
     </div>
   </footer>
 
+  <!-- VISOR DE FOTOS REALES A PANTALLA COMPLETA (LIGHTBOX) -->
+  <div id="photo-lightbox" onclick="closeLightbox()" class="fixed inset-0 z-[100] bg-slate-950/90 hidden items-center justify-center p-4 backdrop-blur-sm cursor-zoom-out">
+    <div class="relative max-w-5xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+      <button type="button" onclick="closeLightbox()" class="self-end mb-2 bg-white/15 hover:bg-white/25 text-white font-bold px-3.5 py-1.5 rounded-full text-xs transition">
+        ✕ Cerrar foto (ESC)
+      </button>
+      <img id="lightbox-img" src="" alt="" class="max-h-[80vh] w-auto max-w-full object-contain rounded-2xl shadow-2xl border border-slate-700">
+      <p id="lightbox-caption" class="text-slate-200 text-xs sm:text-sm font-semibold mt-3 text-center bg-slate-900/80 px-4 py-2 rounded-xl border border-slate-800"></p>
+    </div>
+  </div>
+
   <script>
     function switchTab(tabId) {
       document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
@@ -2178,6 +2230,26 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    function applyPreset(mode) {
+      const presets = {
+        smart:     { yogya: '69',  bromo: '35', ubud: '110', gili: '84',  uluwatu: '54', jeddah: '0', flights: '178', meals: '156' },
+        seleccion: { yogya: '114', bromo: '48', ubud: '110', gili: '126', uluwatu: '54', jeddah: '0', flights: '194', meals: '156' },
+        truco:     { yogya: '114', bromo: '48', ubud: '110', gili: '126', uluwatu: '54', jeddah: '0', flights: '169', meals: '156' },
+        lujo:      { yogya: '114', bromo: '59', ubud: '230', gili: '126', uluwatu: '95', jeddah: '0', flights: '220', meals: '210' }
+      };
+      const p = presets[mode];
+      if (!p) return;
+      document.getElementById('calc-yogya').value = p.yogya;
+      document.getElementById('calc-bromo').value = p.bromo;
+      document.getElementById('calc-ubud').value = p.ubud;
+      document.getElementById('calc-gili').value = p.gili;
+      document.getElementById('calc-uluwatu').value = p.uluwatu;
+      document.getElementById('calc-jeddah').value = p.jeddah;
+      document.getElementById('calc-flights').value = p.flights;
+      document.getElementById('calc-meals').value = p.meals;
+      updateBudget();
+    }
+
     function updateBudget() {
       const paidPerPerson = 479 + 80.5; // 559.50 EUR
       const yogya = parseFloat(document.getElementById('calc-yogya').value) || 0;
@@ -2188,11 +2260,13 @@
       const jeddah = parseFloat(document.getElementById('calc-jeddah').value) || 0;
       const flightsEl = document.getElementById('calc-flights');
       const flightsPax = flightsEl ? (parseFloat(flightsEl.value) || 194) : 194;
+      const mealsEl = document.getElementById('calc-meals');
+      const mealsPax = mealsEl ? (parseFloat(mealsEl.value) || 156) : 156;
 
       const hotelsPax = yogya + bromo + ubud + gili + uluwatu;
-      // Fixed operational costs per person: flightsPax (169/178/194/220) + 361.65 (16 partidas Pestaña 4) + 126.00 (Visados/Cabra/eSIM) + 156.00 (Comidas) + jeddah
-      const restPax = flightsPax + 361.65 + 126.00 + 156.00 + jeddah;
-      const pendingPax = hotelsPax + restPax;
+      // Fixed operational costs per person excluding domestic flights: 361.65 (16 partidas Pestaña 4) + 126.00 (Visados/Cabra/eSIM) + mealsPax (156/210) + jeddah
+      const nonFlightRestPax = 361.65 + 126.00 + mealsPax + jeddah;
+      const pendingPax = hotelsPax + flightsPax + nonFlightRestPax;
       const totalPax = paidPerPerson + pendingPax;
       const totalCouple = totalPax * 2;
 
@@ -2201,11 +2275,49 @@
       document.getElementById('calc-total-pax').innerHTML = fmt(totalPax) + ' € <span class="text-sm font-normal text-slate-300">/ persona</span>';
       document.getElementById('calc-total-couple').textContent = 'Total Pareja Todo Incluido: ' + fmt(totalCouple) + ' €';
       document.getElementById('calc-hotels-pax').textContent = fmt(hotelsPax) + ' € / pers (' + fmt(hotelsPax * 2) + ' € pareja)';
-      document.getElementById('calc-rest-pax').textContent = fmt(restPax) + ' € / pers';
+      const flightsPaxEl = document.getElementById('calc-flights-pax');
+      if (flightsPaxEl) {
+        flightsPaxEl.textContent = fmt(flightsPax) + ' € / pers (' + fmt(flightsPax * 2) + ' € pareja)';
+      }
+      document.getElementById('calc-rest-pax').textContent = fmt(nonFlightRestPax) + ' € / pers';
       document.getElementById('calc-pending-pax').textContent = fmt(pendingPax) + ' € / pers (' + fmt(pendingPax * 2) + ' € pareja)';
+
+      const headerInd = document.getElementById('header-budget-indicator');
+      if (headerInd) {
+        headerInd.textContent = fmt(totalPax) + ' € / pers (' + fmt(totalCouple) + ' € pareja)';
+      }
     }
 
-    document.addEventListener('DOMContentLoaded', updateBudget);
+    function openLightbox(src, alt) {
+      const modal = document.getElementById('photo-lightbox');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      if (!modal || !img) return;
+      img.src = src;
+      img.alt = alt || '';
+      if (cap) cap.textContent = alt || '';
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('photo-lightbox');
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateBudget();
+      document.querySelectorAll('main article img, #tab-hoteles img').forEach(img => {
+        img.title = 'Haz clic para ampliar esta fotografía real a pantalla completa';
+        img.addEventListener('click', () => openLightbox(img.currentSrc || img.src, img.alt));
+      });
+    });
   </script>
 </body>
 </html>
